@@ -38,19 +38,19 @@ public class RestUtilities {
 		return RESP_SPEC;
 	}
 
-	public static RequestSpecification queryParam(RequestSpecification reqSpec, String param, String value) {
+	public static RequestSpecification createQueryParam(RequestSpecification reqSpec, String param, String value) {
 		return reqSpec.queryParam(param, value);
 	}
 
-	public static RequestSpecification queryParams(RequestSpecification reqSpec, Map<String, String> queryMap) {
+	public static RequestSpecification createQueryParams(RequestSpecification reqSpec, Map<String, String> queryMap) {
 		return reqSpec.queryParams(queryMap);
 	}
 
-	public static RequestSpecification pathParam(RequestSpecification reqSpec, String param, String value) {
+	public static RequestSpecification createPathParam(RequestSpecification reqSpec, String param, String value) {
 		return reqSpec.queryParam(param, value);
 	}
 
-	public static RequestSpecification pathParams(RequestSpecification reqSpec, Map<String, String> queryMap) {
+	public static RequestSpecification createPathParams(RequestSpecification reqSpec, Map<String, String> queryMap) {
 		return reqSpec.queryParams(queryMap);
 	}
 
@@ -91,4 +91,5 @@ public class RestUtilities {
 		REQ_SPEC.contentType(type);
 		return REQ_SPEC;
 	}
+	
 }
