@@ -11,7 +11,7 @@ import static io.restassured.RestAssured.given;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 
-public class ValidatePlaceName {
+public class ValidatePlaceName2 {
 	
 	RequestSpecification requestSpec;
 	ResponseSpecification responseSpec;
@@ -23,7 +23,7 @@ public class ValidatePlaceName {
 	}
 
 	@Test
-	public void karnatakaPlaceName() {
+	public void karnatakaPlaceName2() {
 		given()
 				.spec(requestSpec)
 		.when()
@@ -31,7 +31,7 @@ public class ValidatePlaceName {
 		.then()
 				.log().all()
 				.spec(responseSpec)
-				.body("places[0].'place name'", equalTo("Rajbhavan"));
+				.body("places[2].'place name'", equalTo("Legalators Home"));
 	}
-
+	
 }

@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="Regression Suite" >
+   <test name="Validate name of place">
+    <classes>
+      <class name="com.restassured.tests.ValidatePlaceName"/>
+      <class name="com.restassured.tests.ValidatePlaceName2"/>
+    </classes>
+  </test>
+</suite>
